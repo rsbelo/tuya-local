@@ -206,6 +206,9 @@
                     }
                 }
             },
+            "cold_water": {
+                "name": "ٹھنڈا پانی"
+            },
             "thermostat": {
                 "name": "تھرموسٹیٹ",
                 "state_attributes": {
@@ -268,7 +271,20 @@
                 }
             },
             "heater": {
-                "name": "ہیٹر"
+                "name": "ہیٹر",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "low": "کم",
+                            "medium": "درمیانہ",
+                            "high": "زیادہ",
+                            "program_1": "پروگرام 1",
+                            "program_2": "پروگرام 2",
+                            "program_3": "پروگرام 3",
+                            "standby": "اسٹینڈ بائی"
+                        }
+                    }
+                }
             },
             "thermo_switch": {
                 "state_attributes": {
@@ -442,6 +458,9 @@
             },
             "timer_x": {
                 "name": "ٹائمر {x}"
+            },
+            "volume": {
+                "name": "آواز"
             }
         },
         "select": {
@@ -514,7 +533,9 @@
                     "portuguese": "Português",
                     "russian": "Русский",
                     "spanish": "Español",
-                    "turkish": "Türkçe"
+                    "turkish": "Türkçe",
+                    "polish": "Polski",
+                    "vietnamese": "Tiếng Việt"
                 }
             },
             "light_mode": {
@@ -741,7 +762,10 @@
                 "state": {
                     "sweep": "جھاڑو",
                     "mop": "پوچھا",
-                    "sweep_and_mop": "جھاڑو اور پونچھا"
+                    "sweep_and_mop": "جھاڑو اور پونچھا",
+                    "intensive": "شدید",
+                    "quiet": "چپ چاپ",
+                    "sweep_before_mopping": "پوچھنے سے پہلے جھاڑو"
                 }
             },
             "washing_mode": {
@@ -912,7 +936,16 @@
                     "maintenance_required": "مینٹیننس کی ضرورت ہے",
                     "dry": "خشک",
                     "comfortable": "آرام دہ",
-                    "damp": "نم"
+                    "damp": "نم",
+                    "smoothing": "ہموار کرنا",
+                    "cleaned": "صاف کیا گیا",
+                    "cold_water_unavailable": "ٹھنڈا پانی دستیاب نہیں",
+                    "drain": "نکاسی",
+                    "drain_cold_water": "ٹھنڈا پانی نکالیں",
+                    "drain_hot_water": "گرم پانی نکالیں",
+                    "drain_normal_water": "عام پانی نکالیں",
+                    "high_temperature_emptying": "اعلی درجہ حرارت خالی کرنا",
+                    "high_temperature_emptied": "اعلی درجہ حرارت خالی ہوگیا"
                 }
             },
             "time_remaining": {
@@ -967,6 +1000,12 @@
         "switch": {
             "anti_frost": {
                 "name": "اینٹی فراسٹ"
+            },
+            "auto_clean": {
+                "name": "خود کار صفائی"
+            },
+            "auto_light": {
+                "name": "خود کار روشنی"
             },
             "breaker": {
                 "name": "بریککر",

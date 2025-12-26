@@ -204,6 +204,9 @@
                     }
                 }
             },
+            "cold_water": {
+                "name": "Aigua freda"
+            },
             "thermostat": {
                 "name": "Termòstat",
                 "state_attributes": {
@@ -266,7 +269,20 @@
                 }
             },
             "heater": {
-                "name": "Escalfador"
+                "name": "Escalfador",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "low": "Baix",
+                            "medium": "Mitjà",
+                            "high": "Alt",
+                            "program_1": "Programa 1",
+                            "program_2": "Programa 2",
+                            "program_3": "Programa 3",
+                            "standby": "En espera"
+                        }
+                    }
+                }
             },
             "thermo_switch": {
                 "state_attributes": {
@@ -461,7 +477,16 @@
                     "maintenance_required": "Manteniment necessari",
                     "dry": "Sec",
                     "comfortable": "Còmode",
-                    "damp": "Humit"
+                    "damp": "Humit",
+                    "smoothing": "Allisant",
+                    "cleaned": "Netejat",
+                    "cold_water_unavailable": "Aigua freda no disponible",
+                    "drain": "Desguàs",
+                    "drain_cold_water": "Desguàs d'aigua freda",
+                    "drain_hot_water": "Desguàs d'aigua calenta",
+                    "drain_normal_water": "Desguàs d'aigua normal",
+                    "high_temperature_emptying": "Buidatge a alta temperatura",
+                    "high_temperature_emptied": "Buidatge a alta temperatura completat"
                 }
             },
             "time_remaining": {
@@ -585,6 +610,9 @@
             },
             "timer_x": {
                 "name": "Temporitzador {x}"
+            },
+            "volume": {
+                "name": "Volum"
             }
         },
         "select": {
@@ -657,7 +685,9 @@
                     "chinese": "中文",
                     "japanese": "日本語",
                     "korean": "한국어",
-                    "russian": "Русский"
+                    "russian": "Русский",
+                    "polish": "Polski",
+                    "vietnamese": "Tiếng Việt"
                 }
             },
             "light_mode": {
@@ -884,7 +914,10 @@
                 "state": {
                     "sweep": "Escombrat",
                     "mop": "Fregat",
-                    "sweep_and_mop": "Escombrat i fregat"
+                    "sweep_and_mop": "Escombrat i fregat",
+                    "intensive": "Intensiu",
+                    "quiet": "Silenciós",
+                    "sweep_before_mopping": "Escombrat abans de fregar"
                 }
             },
             "washing_mode": {
@@ -965,6 +998,12 @@
         "switch": {
             "anti_frost": {
                 "name": "Antigel"
+            },
+            "auto_clean": {
+                "name": "Neteja automàtica"
+            },
+            "auto_light": {
+                "name": "Llum automàtica"
             },
             "breaker": {
                 "name": "Trenca-circuit",

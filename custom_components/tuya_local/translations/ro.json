@@ -204,6 +204,9 @@
                     }
                 }
             },
+            "cold_water": {
+                "name": "Apă rece"
+            },
             "thermostat": {
                 "name": "Termostat",
                 "state_attributes": {
@@ -266,7 +269,20 @@
                 }
             },
             "heater": {
-                "name": "Încălzitor"
+                "name": "Încălzitor",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "low": "Scăzut",
+                            "medium": "Mediu",
+                            "high": "Ridicat",
+                            "program_1": "Program 1",
+                            "program_2": "Program 2",
+                            "program_3": "Program 3",
+                            "standby": "În așteptare"
+                        }
+                    }
+                }
             },
             "thermo_switch": {
                 "state_attributes": {
@@ -440,6 +456,9 @@
             },
             "timer_x": {
                 "name": "Temporizator {x}"
+            },
+            "volume": {
+                "name": "Volum"
             }
         },
         "select": {
@@ -512,7 +531,9 @@
                     "portuguese": "Português",
                     "russian": "Русский",
                     "spanish": "Español",
-                    "turkish": "Türkçe"
+                    "turkish": "Türkçe",
+                    "polish": "Polski",
+                    "vietnamese": "Tiếng Việt"
                 }
             },
             "light_mode": {
@@ -739,7 +760,10 @@
                 "state": {
                     "sweep": "Măturare",
                     "mop": "Mop",
-                    "sweep_and_mop": "Măturare și mop"
+                    "sweep_and_mop": "Măturare și mop",
+                    "intensive": "Intensiv",
+                    "quiet": "Silențios",
+                    "sweep_before_mopping": "Măturare înainte de mop"
                 }
             },
             "washing_mode": {
@@ -910,7 +934,16 @@
                     "maintenance_required": "Necesită întreținere",
                     "dry": "Uscat",
                     "comfortable": "Confortabil",
-                    "damp": "Umed"
+                    "damp": "Umed",
+                    "smoothing": "Netezire",
+                    "cleaned": "Curățat",
+                    "cold_water_unavailable": "Apă rece indisponibilă",
+                    "drain": "Drenaj",
+                    "drain_cold_water": "Drenare apă rece",
+                    "drain_hot_water": "Drenare apă caldă",
+                    "drain_normal_water": "Drenare apă normală",
+                    "high_temperature_emptying": "Golire la temperatură înaltă",
+                    "high_temperature_emptied": "Golire la temperatură înaltă finalizată"
                 }
             },
             "time_remaining": {
@@ -965,6 +998,12 @@
         "switch": {
             "anti_frost": {
                 "name": "Antigel"
+            },
+            "auto_clean": {
+                "name": "Curățare automată"
+            },
+            "auto_light": {
+                "name": "Lumină automată"
             },
             "breaker": {
                 "name": "Siguranță",
